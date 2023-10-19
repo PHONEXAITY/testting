@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK STORE || e-book</title>
+    <link rel="stylesheet" href="/style/bookstore.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="/js/Bookshop.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar " role="navigation" aria-label="main navigation" style="background-color: #FDF5F5;">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#">
+                <img src="/picture/type book/books-svgrepo-com (1).svg" width="50px" height="auto">BOOKSTORE
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start m-2">
+                <a class="navbar-item">
+                  Home
+                </a>
+          
+                <a class="navbar-item">
+                  Books
+                </a>
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    More
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                     Genres
+                    </a>
+                    <a class="navbar-item">
+                      About Us
+                    </a>
+                    <a class="navbar-item">
+                      Contact Us
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Report an issue
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--Wishlist-->
+              <!--account-->
+              <div class="navbar-end">
+             
+                <div class="navbar-item">
+                  <!--Navbar End-->
+                  <div class="buttons">
+                   <!--Mode--> <button class="toggle">
+                      <img src="/picture/night-mode.png" alt="Logo Dark" class="logo logo-light">
+                      <img src="/picture/light-mode-svgrepo-com.svg" alt="Logo Light" class="logo logo-dark">
+                    </button>
+
+
+                    <a class="button is-light is-pulled-right" href="#">
+                        <span class="icon">
+                          <img src="/type book/basket-svgrepo-com.svg" alt="wishlist">
+                        </span>
+                        <span>Cart</span>
+                      </a>
+                    <a class="button is-primary is-dark is-hovered">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">Log in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </nav>
+    </header>
+
+    <!--<section class="section">
+     <div class="slider ">
+  <div class="slides ">
+    <input type="radio" name="radio-btn" id="radio1" checked />
+    <input type="radio" name="radio-btn" id="radio2" />
+    <input type="radio" name="radio-btn" id="radio3" />
+    <div class="is-1 is-flex">
+    <div class="slide first">
+      <img src="/picture/361565706_191698913887790_497756990606661648_n.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="/picture/362225557_191698307221184_5203223544687023814_n.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="/picture/361928552_191697970554551_5899209019838392363_n.jpg" alt="Slide 3">
+    </div>
+    <div class="slide">
+      <img src="/picture/360100835_191698393887842_7176194405306156643_n.jpg" alt="Slide 4">
+    </div>
+    <div class="slide">
+      <img src="/picture/360104925_191700243887657_8647005707838625316_n.jpg" alt="Slide 5">
+    </div>
+    <div class="slide">
+      <img src="/picture/360106301_191698973887784_2649305795251626704_n.jpg" alt="Slide 6">
+    </div>
+    <div class="slide">
+      <img src="/picture/360106534_191697893887892_3673910278796165961_n.jpg" alt="Slide 7">
+    </div>
+    <div class="slide">
+      <img src="/picture/360108548_191700383887643_8816333045115455035_n.jpg" alt="Slide 8">
+    </div>
+  </div>
+    <div class="navigation">
+      <label for="radio1" class="nav-btn"></label>
+      <label for="radio2" class="nav-btn"></label>
+      <label for="radio3" class="nav-btn"></label>
+    </div>
+  </div>
+</div>
+      </section>-->
+      <section class="section">
+    <div class="container">
+      
+     
+      <div id="pichover" class="columns ">
+        <div id="adv1" class="card">
+        <div class="column is-14">
+          <figure class="image is-2by4">
+            <img src="/picture/type book/book_detail_large (8).gif" alt="Sakamoto Days 6">
+          </figure>
+        </div>
+        <div class="column is-15">
+          <h3 class="title is-3">Sakamoto Days 6</h3>
+          <p class="subtitle is-5">Yuto Suzuki</p>
+          <div class="has-text-right">
+            <a href="#">
+            <button id="button" class="learn-more">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Learn More</span>
+            </button>
+          </a>
+        </div>
+        </div>
+        <p class="has-text-right mr-5" style="font-size: medium; font-family: 'Times New Roman', Times, serif; color:#0565D2 ;">Soon</p>
+    </div>
+
+<div id="adv2" class="card">
+        <div class="column is-14">
+          <figure class="image is-1by4">
+            <img src="/picture/type book/book_detail_large (9).gif" alt="Oshi no Ko">
+          </figure>
+        </div>
+        <div class="column is-15">
+          <h3 class="title is-3">Oshi no Ko</h3>
+          <p class="subtitle is-5">Aka Akasaka</p>
+          <div class="has-text-right">
+            <a href="#">
+            <button id="button" class="learn-more">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Learn More</span>
+            </button>
+          </a>
+        </div>
+        </div>
+        <p class="has-text-right mr-5 mb-3" style="font-size: medium; font-family: 'Times New Roman', Times, serif; color:#0565D2 ; margin-top: 5px;">Soon</p>
+    </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+    <section class="section">
+        <div class="container">
+            <div class="title">
+                <p>General Book</p>
+                <span class="tag is-info">Business</span>
+                <span class="tag is-warning">Bestseller</span>
+              </div>
+       
+        <div id="book_list" class="columns is-multiline is-horizontal">
+            <div class="column is-one-fifth is-flex ">
+              <div class="card ">
+                <div class="card-image">
+                  <figure class="image is-2by4">
+                    <img src="/picture/type book/book_detail_large.gif" alt="Good Vibes Good Life">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-5">Good Vibes Good Life</p>
+                  <p class="subtitle is-6">By Vex King</p>
+                  <div class="content ">
+                    <p class="is-hidden-desktop">ใช้คลื่นพลังบวกดึงดูดพลังสุขผลงานเล่มเยี่ยมที่สร้างแรงบันดาลใจให้ผู้คนทั่วโลก N0.1 SUNDAY TIMES BESTSELLER ความลับของการบรรลุในสิ่งยิ่งใหญ่คือ
+                        การเข้าใจกฎแห่งแรงสั่นสะเทือนที่กล่าวว่า ทุกอย่างในจักรวาลล้วนเกิดจากแรงสั่นสะเทือน
+                        ทุกแรงสั่นสะเทือนที่มีความถี่ตรงกันสามารถดึงดูดกันได้
+                        อย่าเผลอไผลไปตามสมองที่ติดนิสัยชอบผลักไสโชคและสิ่งดีๆ ด้วยพลังลบ
+                        ยิ่งคุณส่งคลื่นพลังบวกออกสู่ภายนอก จักรวาลจะยิ่งสะท้อนคลื่นความสุขกลับมาเท่าทวีคุณ
+                        ทุกคำพูด อารมณ์ และการกระทำของคุณเปลี่ยนชีวิตคุณได้ทันที</p>
+                  </div>
+                </div>
+                <footer class="card-footer mt-6">
+                  <a href="#" class="card-footer-item" id="buy">Buy Now</a>
+                  <a href="#" class="card-footer-item" id="cart">Add to Cart</a>
+                </footer>
+              </div>
+              </div>
+              
+              <div class="column is-one-fifth is-flex ">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-2by4">
+                    <img src="/picture/type book/book_detail_large (1).gif" alt="Money 101">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-5 mt-5">Money 101</p>
+                  <p class="subtitle is-6">By จักรพงษ์ เมษพันธุ์</p>
+                  <div class="content">
+                    <p class="is-hidden-desktop">อยากเริ่มต้นศึกษาเรื่องการเงิน ต้องเริ่มต้นยังไง หนังสือเล่มนี้จะมาช่วยคุณให้รู้จัก "เริ่มต้นบริหารเงิน" ที่ได้มาทุกบาททุกสตางค์ ได้อย่างถูกต้องและเหมาะสมแก่ชีวิตในแต่ละช่วงเวลา รวมถึงปลูกฝังหลักคิดทางการเงินที่จะพาไปสู่ความมั่งคั่ง ในแนวทางที่สอดคล้องกับเป้าหมายชีวิตของแต่ละคน</p>
+                  </div>
+                </div>
+                <footer class="card-footer mt-6">
+                  <a href="#" class="card-footer-item" id="buy">Buy Now</a>
+                  <a href="#" class="card-footer-item" id="cart">Add to Cart</a>
+                </footer>
+              </div>
+            </div>
+
+            <div class="column is-one-fifth is-flex ">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-2by3">
+                      <img src="/picture/type book/book_detail_large (2).gif" alt="สำเร็จสบายสบาย เพราะเรียนรู้ไวแบบคนขี้เกียจ">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-5">สำเร็จสบายสบาย เพราะเรียนรู้ไวแบบคนขี้เกียจ</p>
+                    <p class="subtitle is-6">By Naoyuki Honda</p>
+                    <div class="content">
+                      <p  class="is-hidden-mobile is-hidden-desktop">นี่คือสุดยอดเทคนิคการเรียนของ "นะโอะยุกิ ฮนดะ" บิดาแห่งความขี้เกียจ ผู้ซึ่งพยายามสุดชีวิตเพื่อหาวิธีที่ง่ายที่สุด สั้นที่สุด และสะดวกที่สุด ในการทำทุกอย่างให้สำเร็จตามเป้าหมาย โดยใช้ "ความขี้เกียจ" เป็นสารตั้งต้น จนคิดค้นเป็นเทคนิคการเรียนรู้เร็วได้อย่างน่าทึ่ง</p>
+                    </div>
+                  </div>
+                  <footer class="card-footer">
+                    <a href="#" class="card-footer-item" id="buy">Buy Now</a>
+                    <a href="#" class="card-footer-item" id="cart">Add to Cart</a>
+                  </footer>
+                </div>
+              </div>
+
+              <div class="column is-one-fifth is-flex ">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-2by3">
+                      <img src="/picture/type book/book_detail_large (7).gif" alt="Atomic Habits เพราะชีวิตดีได้กว่าที่เป็น">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-5">Atomic Habits เพราะชีวิตดีได้กว่าที่เป็น</p>
+                    <p class="subtitle is-6">By James Clear</p>
+                    <div class="content">
+                      <p  class="is-hidden-mobile is-hidden-desktop">บทพิสูจน์ที่เปลี่ยนชีวิตคุณให้ดีขึ้นได้อย่างถาวร จากนักเขียนหนังสือขายดีของ New York Times ผู้เชี่ยวชาญระดับโลกด้านการสร้างนิสัย
+                        จากหนังสือขายดีระดับโลกที่มียอดขายหลายล้านเล่ม แปลไปแล้วกว่า 40 ภาษา การันตีความดีงามโดย "New York Times Bestseller" นี่คือหนังสือเกี่ยวกับการเปลี่ยนแปลงนิสัย โดยใช้หลักการทางวิทยาศาสตร์มาอ้างอิงว่าการเปลี่ยนแปลงเล็ก ๆ ที่เล็กมาก ๆ จะนำไปสู่การเปลี่ยนแปลงที่ใหญ่ขึ้นได้อย่างไร ซึ่งหลักการนี้สามารถประยุกต์ใช้ได้กับทุกเรื่อง เช่น การทำงาน การเงิน ความสัมพันธ์ระหว่างบุคคล สุขภาพ ความคิดสร้างสรรค์ ไม่ว่าเป้าหมายของเราคืออะไรก็ตาม หนังสือเล่มนี้จะช่วยเปลี่ยนแปลงนิสัยและคงนิสัยดี ๆ ไว้ได้นานเท่านาน
+                        หากคุณพยายามเปลี่ยนแปลงตัวเองแต่ไม่สำเร็จสักที หนังสือเล่มนี้ช่วยคุณได้! ด้วยการพัฒนาตัวเองให้ดีขึ้นเพียงวันละ 1% ไม่ว่าเป้าหมายในชีวิตของคุณคืออะไร คุณทำสำเร็จได้อย่างแน่นอน!</p>
+                    </div>
+                  </div>
+                  <footer class="card-footer mt-5">
+                    <a href="#" class="card-footer-item" id="buy">Buy Now</a>
+                    <a href="#" class="card-footer-item" id="cart">Add to Cart</a>
+                  </footer>
+                </div>
+              </div>
+
+        
+              <button id="add-book">
+                <span><img src="/picture/type book/plus.svg" alt="Add Book"></span>
+              </button>
+
+            </div>
+        </div>
+
+            <!-- Repeat the above code for each book -->
+      </section>
+   <!--Manga Book Add-->
+      <section class="section">
+        <div class="container">
+            <div class="title">
+                <p>Manga Book</p>
+                <span class="tag is-info">anime</span>
+                <span class="tag is-link">manga</span>
+                <span class="tag is-warning">Bestseller</span>
+              </div>
+
+              <div id="book_list" class="columns is-multiline is-horizontal">
+              <div class="column is-one-fifth is-flex ">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-3by3">
+                      <img src="/picture/type book/book_detail_large (3).gif" alt="Classroom of the Elite SS2">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-5">Classroom of the Elite SS2</p>
+                    <p class="subtitle is-6">By Kinugasa Syougo</p>
+                    <div class="content">
+                      <p class="is-hidden-desktop">“คนที่จะเข้าใจสิ่งที่ฉันพูดและไม่เอาไปแพร่งพรายสุ่มสี่สุ่มห้า ฉันนึกออกแค่นายคนเดียว”
+
+                        งานกีฬาปิดฉากลงแล้ว เทศกาลวัฒนธรรมครั้งแรกของโรงเรียนมัธยมปลายโคโดอิคุเซกำลังใกล้เข้ามา แม้ในห้องจะมีนักเรียนที่สร้างกำแพงกับคนอื่นอย่างฮาเซเบะและมิยาเกะ รวมทั้งนักเรียนที่ไม่ยอมให้ความร่วมมืออย่างโคเอนจิ แต่พวกอายาโนะโคจิก็เตรียมการสำหรับร้านเมดคาเฟ่อยู่ลับๆอย่างต่อเนื่อง ทว่าริวเอ็นไม่คลาดสายตาจากการเคลื่อนไหวนั้น จู่ๆเขาฉีกสัญญาความร่วมมือกับห้องโฮริคิตะและประกาศว่าจะทำคาเฟ่เช่นกัน หนำซ้ำยังท้าดวลเรื่องยอดขายด้วย อีกด้านหนึ่งคันซากิผิดหวังกับห้องตัวเองที่สูญเสียโอกาสในการเลื่อนเป็นห้อง A ส่วนประธานสภานักเรียนนางุโมะก็มีท่าทีแปลกไปหลังอายาโนะโคจิผิดสัญญา อายาโนะโคจิเริ่มเป็นฝ่ายเข้าหาสองคนที่ว่า—!?
+                        “ผมมีเรื่องจะเสนอประธานนางุโมะครับ คราวหน้าผมขอเป็นฝ่ายเสนอเรื่องการตัดสินแพ้ชนะให้ประธานสภานักเรียนพิจารณาได้หรือเปล่า”</p>
+                    </div>
+                  </div>
+                  <footer class="card-footer mt-3">
+                    <a href="#" class="card-footer-item" id="buy">Buy Now</a>
+                    <a href="#" class="card-footer-item" id="cart">Add to Cart</a>
+                  </footer>
+                </div>
+              </div>
+       
+
+              <div class="column is-one-fifth is-flex ">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-2by4">
+                      <img src="/picture/type book/book_detail_large (4).gif" alt="Jujutsu Kaisen SS1">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-5 mt-3">Jujutsu Kaisen SS1</p>
+                    <p class="subtitle is-6">By Gege Akutami</p>
+                    <div class="content">
+                      <p class="is-hidden-desktop">อิตาโดริ ยูจิ นักเรียนมัธยมปลายที่มีสมรรถภาพร่างกายสูงอย่างหาตัวจับได้ยาก มีกิจวัตรประจำวันคือการไปเยี่ยมปู่ที่นอนป่วยอยู่ แต่แล้ววันหนึ่งผนึกของ “วัตถุต้องสาป” ที่หลับอยู่ในโรงเรียนก็ถูกปลดออก ทำให้สัตว์ประหลาดปรากฏตัว อิตาโดริจึงจะบุกเข้าไปในอาคารเรียนเพื่อช่วยรุ่นพี่ที่อยู่ข้างใน</p>
+                    </div>
+                  </div>
+                  <footer class="card-footer mt-5">
+                    <a href="#" class="card-footer-item" id="buy">Buy Now</a>
+                    <a href="#" class="card-footer-item" id="cart">Add to Cart</a>
+                  </footer>
+                </div>
+              </div>
+
+
+              <div class="column is-one-fifth is-flex ">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-3by3">
+                      <img src="/picture/type book/book_detail_large (5).gif" alt="Kanojo Okarishimasu">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-5 mt-4">Kanojo, Okarishimasu</p>
+                    <p class="subtitle is-6">By Reiji Miyajima</p>
+                    <div class="content">
+                      <p class="is-hidden-desktop">เดตกับมิสึฮาระที่เธอตอบตกลง หลังผ่านพ้นช่วงขาดการติดต่อนั้น เหลือเวลาอีกน้อยนิด ขณะที่คิดว่าเวลาจะจบลงโดยไม่มีโอกาศถาม "ใจจริง" ของมิสึฮาระนั้น ด้วย "คำพูดบางอย่าง" จากมิสึฮาระ ก็ทำให้ความสัมพันธ์ของทั้งสองเปลี่ยนไปครั้งใหญ่!!</p>
+                    </div>
+                  </div>
+                  <footer class="card-footer mt-5">
+                    <a href="#" class="card-footer-item" id="buy">Buy Now</a>
+                    <a href="#" class="card-footer-item" id="cart">Add to Cart</a>
+                  </footer>
+                </div>
+              </div>
+
+              <div class="column is-one-fifth is-flex ">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-3by3">
+                      <img src="/picture/type book/book_detail_large (6).gif" alt=" UQ HOLDER!">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-5 mt-4"> UQ HOLDER!</p>
+                    <p class="subtitle is-6">By Ken Akamatsu</p>
+                    <div class="content">
+                      <p class="is-hidden-desktop"> UQ Holder หลงกลกับดักของบาลแล้วเอาตัวรอดมาได้อย่างหวุดหวิด โทตะที่รู้ว่าใน [สายสัมพันธ์นับพัน] อาร์ติแฟ็กต์ของ เนกิ สปริงค์ฟิลด์ มีพลังที่สามารถช่วยยูกิฮิเมะออกมาได้นั้น ได้มุ่งหน้าไปที่ดาวแครอน ดาวบริวารของดาวพลูโตร่วมกับเหล่าสมาชิกของ UQ Holder เพื่อไปปราบบาลและแย่งชิงยูกิฮิเมะกลับคืนมา! บาลและ [คอสโม่ เอนเทเลเคีย] เวทมนตร์ขั้นสุดยอดขอโยลดาได้ออกมาขัดขวาง UQ Holder! ช่วงเวลาที่มนุษยชาติกำลังเดินไปสู่จุดจบนั้น โทตะได้ทำเรื่องที่เหนือความคาดหมาย...!?</p>
+                    </div>
+                  </div>
+                  <footer class="card-footer mt-5">
+                    <a href="#" class="card-footer-item" id="buy">Buy Now</a>
+                    <a href="#" class="card-footer-item" id="cart">Add to Cart</a>
+                  </footer>
+                </div>
+              </div>
+              
+              <button id="add-book">
+                <span><img src="/picture/type book/plus.svg" alt="Add Book"></span>
+              </button>
+
+            </div>
+      </section>
+     
+        <footer class="footer" style="background-color:#FEF0F0 ;">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h4 class="title is-4">About Us</h4>
+              <h5>Student Computer Engineering</h5><br>
+              <h4>Souphanouvong University</h4>
+            </div>
+            <div class="column">
+              <h4 class="title is-4">Contact Us</h4>
+              <p>Phoulekchalern Village LuangPrabang City</p>
+              <p> LAO PDR</p>
+              <p>+856 020 ********</p>
+              <p>Email : phoneyang1@gmail.com</p>
+            </div>
+            <div class="column">
+              <h4 class="title is-4">Follow Us</h4>
+              <a href="#">
+                <button class="fb_btn">
+                  <p>Facebook</p>
+                  <img src="/picture/type book/facebook-logo-2019.svg" alt="Facebook">
+                  </button>
+              </a><br>
+              <a href="#">
+                <button class="twit_btn">
+                  <p>Twitter</p>
+                  <img src="/picture/type book/twitter.svg" alt="Twitter">
+                 </button>
+              </a><br>
+              <a href="#">
+                <button class="instg_btn">
+                  <p>Instagram</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                  </svg>
+              </button>
+              </a><br>
+              <a href="#">
+                <button class="wa_btn">
+                  <p>WhatsApp</p>
+                  <img src="/picture/type book/whatsapp.svg" alt="Whatsapp">
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+      <div class="footer" style="background-color: #FEF0F0; margin-top: 60px;">
+        <div class="content has-text-centered mt-6 ">
+          <p>
+            <strong>BookStore</strong> by <a href="#">PHONEXAY</a>. &copy; All rights reserved. 
+             The website content
+            is licensed <a href="#">2023</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
